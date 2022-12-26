@@ -68,7 +68,7 @@ var canvas = document.getElementById('canvas');
 
 var scene = new THREE.Scene();
 
-var camera = new THREE.PerspectiveCamera(100, 1, 1, 1000);
+var camera = new THREE.PerspectiveCamera(100, 1, 4, 1000);
 
 camera.position.x = 0;
 camera.position.y = 0;
