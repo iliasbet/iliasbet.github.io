@@ -8,23 +8,23 @@ body {
 }
 
 .topnav {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 50px;
-background-color: rgba(0, 0, 0, 0.6);
-backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
 }
 
 .topnav a {
-float: left;
-color: #f2f2f2;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 17px;
-text-align: center;
-width: 20%;
+    float: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    width: 20%;
 }
 
 .topnav a:hover{
@@ -83,7 +83,7 @@ h2 {
     margin-top: 5px;
 }
 .faded {
-opacity: 0;
+    opacity: 0;
 }
 .colored-text{
     background-image: linear-gradient(to right, #90ee90, rgb(4, 185, 245), rgb(0, 55, 255));
@@ -95,7 +95,7 @@ opacity: 0;
     color: White;
     padding: 15px 32px;
     text-align: center;
-    text-decoration: none; /* Supprimer la décoration de texte */
+    text-decoration: none;
     display: inline-block; /* Afficher en ligne */
     font-size: 25px;
     display: inline-block;
@@ -124,6 +124,7 @@ opacity: 0;
 #canvas {
     width: 400px;
     margin: 0 auto;
+    position: relative;
 }
 
 .flex-container {
@@ -134,10 +135,16 @@ opacity: 0;
 }
 
 .container {
-    background-color: rgb(6, 6, 6);
+    background-color: #141414;
     width: 200px;
-    height: 100px;
-    margin-bottom: 150px;
+    height: 150px;
+    margin-bottom: 50px;
     border-radius: 20px;
 
+}
+
+.logo-overlay{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: -270px;
 }
