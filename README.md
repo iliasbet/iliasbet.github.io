@@ -1,6 +1,6 @@
-#Personal Website
+# Personal Website
 
-##Welcome to my personal website!
+## Welcome to my personal website!
 
 This site was created to showcase my projects and professional background. You will find information about my skills and experiences, as well as links to my accomplishments and publications.
 
@@ -15,9 +15,9 @@ I hope you enjoy your visit and don't hesitate to contact me if you have any que
 Enjoy your visit!
 
 
-#Site Web Personnel 
+# Site Web Personnel 
 
-##Bienvenue sur mon site web personnel !
+## Bienvenue sur mon site web personnel !
 
 Ce site a été créé afin de présenter mes projets et mon parcours professionnel. Vous y trouverez des informations sur mes compétences et expériences, ainsi que des liens vers mes réalisations et publications.
 
