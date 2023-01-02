@@ -102,27 +102,21 @@ var material = new THREE.PointsMaterial({
 var points = new THREE.Points(sphereGeometry, material);
 scene.add(points);
 
-canvas.addEventListener('mousemove', function(event) {
-    // récupérer les coordonnées de la souris
-    var mouseX = event.clientX;
-    var mouseY = event.clientY;
-});
+function onScroll(event) {
+  // Récupérer la valeur de scroll de la page
+  var scrollTop = window.scrollY;
+  console.log(scrollTop);
 
-function onMouseMove(event) {
-    // Récupérer les coordonnées de la souris dans la page
-    var x = event.clientX;
-    var y = event.clientY;
-
-    points.rotation.x = y * 0.01;
-    points.rotation.y = x * 0.005;
+  points.rotation.y = scrollTop * 0.005;
 }
 
 function animate() {
-    requestAnimationFrame(animate);
-    points.rotation.z += 0.02;
-    renderer.render(scene, camera);
+  requestAnimationFrame(animate);
+  points.rotation.z +=  0.02;
+  points.rotation.x += 0.01;
+  renderer.render(scene, camera);
 }
 
-canvas.addEventListener('mousemove', onMouseMove);
+window.addEventListener('scroll', onScroll);
 
 animate();
