@@ -1,8 +1,8 @@
 // The title that you want to animate
-var subtitle = "Hi! I am Ilias, a French engineering student passionate about artificial intelligence. I want to use my knowledge and skills to help advance this field and make the world a better place.";
+var subtitle = "Hi! I am Ilias, a French engineering student interested in artificial intelligence. I want to help advance this field and make the world a better place.";
 
 // The delay between each character being written
-var delay = 100; // 100ms
+var delay = 40; // 100ms
 
 // Get a reference to the title element
 var subtitleElement = document.getElementById("subtitle");
@@ -76,7 +76,7 @@ camera.position.z =15;
 
 
 var renderer = new THREE.WebGLRenderer({canvas: canvas});
-renderer.setSize(400, 400);
+renderer.setSize(335, 335);
 
 var points = [
     [1, 1, 1],
@@ -120,3 +120,9 @@ function animate() {
 window.addEventListener('scroll', onScroll);
 
 animate();
+
+window.onscroll = function() {
+  setTimeout(function() {
+    document.getElementById("home-target").style.display = "block";
+  }, 12000);
+}

@@ -6,7 +6,6 @@
     <title>Ilias Bettahi</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width: 800px)" href="style-navbar-hide.css" />
     <script src="https://cdn.jsdelivr.net/npm/three@0.112.1/build/three.min.js"></script>
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
@@ -14,7 +13,13 @@
     
 </head>
 <div class="row">
-    <div class="topnav col-12">    
+    <img class="header-image" src="./Img/header3.png" alt="Logo" width="100%" height=auto>
+</div>
+
+
+
+<div class="row">
+    <div class="fixed topnav col-12">    
         <a id="home-button" href="#home">Home</a>
         <a id="about-me-button" href="#about">About me</a>
         <a id="projects-button" href="#projects">Projects</a>
@@ -24,63 +29,60 @@
 
 
 <body>
-    <div class="row">
-        <img src="./Img/header2.png" alt="Logo" width="100%" height=auto>
-    
 
-    <div class="row">
-
-        <div class="col-2"></div>
-
-        <div class="col-10">
-            <h1 id="home-target">
-                Transforming
-                <span class="colored-text">ideas</span>
-                into
-                <span class="colored-text">solutions</span>.
-            </h1>
-        </div>
-    </div>
-    
+    <h1 id="home-target">
+        Turn
+        <span class="colored-text">ideas</span><br>
+        in <span class="colored-text">solutions</span>.
+    </h1>
 
     <p class="subtitle" id ="subtitle"></p>
 
-    <div class="button-container">
-        <a href="./CV.pdf" download="CV.pdf">👉 Resume</a>
-        <a href="mailto:ilias.bettahi@gmail.com" target="_blank">📫 Contact</a>
+    <div class="row">
+        <div class="col-6">
+            <div class="button-container">
+                <a href="./CV.pdf" download="CV.pdf">👉 Resume</a>
+                <a href="mailto:ilias.bettahi@gmail.com" target="_blank">📫 Contact</a>
+            </div>
+        </div>
     </div>
 
+    
+
     <div class="section">
-        <h2 id="about-me-target" class="colored-text">Father Beaver, tell me a story !</h2>
+        <h2 id="about-me-target" class="colored-text">Tell me a story !</h2>
         <div class="section-content">
-            <p>Once upon a time, there was a young boy who lived in a small town with his parents. He loved spending his free time playing games on the computer that his parents had bought for him.</p>
-            <p>One day, while browsing through the games on his computer, the kid stumbled upon a chess game. He had never played chess before, but he was immediately drawn to the strategic nature of the game.</p>    
-            <p>The kid spent hours each day playing chess on his computer, studying different strategies and practicing against the computer's AI. Over time, he became very good at the game and even started to participate in online chess tournaments.</p>
-            
+            <p>
+                Once upon a time there was a young boy who was not very good at studies. 
+                He was always in the moon, dreaming and lost in thought. 
+                His parents and teachers were worried about him because he had a lot of difficulties in class and his academic results were poor.
+            </p>
             <p id="collapsible-element" class="collapsible" style="color:rgb(173, 173, 173)">Read more...</p>
             <div class="content">
-                <p>As the kid continued to play and learn more about chess, he also became increasingly interested in the technology behind his computer. He started to explore the different software and programs on his computer, and even taught himself how to code.</p>    
-                <p>Before long, the kid's passion for technology and computer science had grown to rival his love of chess. He spent hours each day tinkering with his computer and learning as much as he could about the field.</p>    
-                <p>The kid's parents were amazed at how quickly he had become so skilled and knowledgeable about computers. They encouraged him to continue pursuing his passion, and even helped him enroll in a program at the local community college to study computer science.</p>    
-                <p>The kid was thrilled to have the opportunity to continue learning and growing in the field that he loved. And even though he still enjoyed playing chess, he knew that his true passion was in the world of computers and technology.</p>
-                <p>I'm Ilias and this is a story about me.</p> 
+                One day, everything changed. The young boy had a click for mathematics.
+                At first, his goal was only to fill his gaps. With time, he discovered the facilities and the material stimulated him.
+                A spirit of competition was born in him.<br>
+                Later, he joined an engineering school. Wherever mathematical logic could help him reason, he applied it.
+                Especially in computer science where his curiosity had never finished stimulating him.<br>
+
+                <p>That boy is me. I have learned that, even when we feel at the bottom of the hole and our surroundings never cease to devalue us, work and self-confidence will always allow us to finally achieve ourselves.</p>
             </div>
         </div>    
     </div>
 
     </div class="section">
-        <h2 id="projects-target" class="colored-text">Some recent projects</h2>
+        <h2 id="projects-target" class="colored-text">Recent projects</h2>
         <div class="section-content">
-            <p>Let's turn ideas into reality!</p>
+            <p>Click to see more on github.</p>
         </div>
-        <div class="flex-container">
-            <div class="flex-item">
+        <div class="row">
+            <div class="col-4">
                 <div class="container">
                     <div class="button-container">
-                        <a href="https://github.com/iliasbet/ProjetScrabbbleFinal">👉 Scrabble</a>
+                        <a href="https://github.com/iliasbet/ProjetScrabbbleFinal">👉 Perfect Keyboard</a>
                         <ul>
-                            <li>Board Game</li>
-                            <li>C (Console)</li>
+                            <li>Machine Learning</li>
+                            <li>Genetic Algorithm</li>
                         </ul>
                     </div>
                 </div>
@@ -93,36 +95,32 @@
                         </ul>
                     </div>
                 </div>
-                
             </div>
-            <div class="flex-item">
+            <div class="col-4">
                 <canvas id="canvas"></canvas>
-                <img class="logo-overlay colored-text" src="./Img/github-logo.png" alt="Logo GitHub" width="150" height=auto>
+                <img class="overlay" src="./Img/github-logo.png" alt="Logo GitHub" width="150" height=aut style="margin-top: 150px">
             </div>
-            <div class="flex-item">
+            <div class="col-4">
                 <div class="container">
                     <div class="button-container">
-                        <a href="https://github.com/iliasbet/ProjetScrabbbleFinal">Cluedo 👈</a>
+                        <a href="https://github.com/iliasbet/ProjetScrabbbleFinal">👉 Air Traffic</a>
                         <ul>
-                            <li>Board Game</li>
-                            <li>C++ and SFML</li>
-                            <li>OOP</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="button-container">
-                        <a href="https://github.com/iliasbet/ProjetScrabbbleFinal">AirTraffic 👈</a>
-                        <ul>
-                            <li>Air traffic simulator</li>
-                            <li>C++ and SFML</li>
+                            <li>Traffic Simulator</li>
                             <li>Graph Theory</li>
                         </ul>
                     </div>
                 </div>
-                
+                <div class="container">
+                    <div class="button-container">
+                        <a href="https://github.com/iliasbet/ProjetScrabbbleFinal">👉 Personal Website</a>
+                        <ul>
+                            <li>HTML, CSS and Javascript</li>
+                            <li>Three.js</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            
+
         </div>
     </div>
     
