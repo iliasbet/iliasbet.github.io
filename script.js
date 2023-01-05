@@ -1,5 +1,5 @@
 // The title that you want to animate
-var subtitle = "Hi! I am Ilias, a French engineering student interested in artificial intelligence. I want to help advance this field and make the world a better place.";
+var subtitle = "I am Ilias, a French engineering student interested in artificial intelligence. I want to help advance this field and make the world a better place.";
 
 // The delay between each character being written
 var delay = 40; // 100ms
@@ -40,7 +40,8 @@ navbarButton.addEventListener('click', () => {
 
 scrollToElement('about-me-button','about-me-target');
 scrollToElement('home-button','home-target');
-scrollToElement('projects-button','projects-target');
+scrollToElement('projects-button','contact-target');
+scrollToElement('contact-button','contact-target');
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
