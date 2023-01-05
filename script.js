@@ -1,39 +1,30 @@
-// The title that you want to animate
 var subtitle = "I am Ilias, a French engineering student interested in artificial intelligence. I want to help advance this field and make the world a better place.";
 
-// The delay between each character being written
-var delay = 40; // 100ms
+var delay = 40;
 
-// Get a reference to the title element
 var subtitleElement = document.getElementById("subtitle");
 
-// This function will add one character to the title and
-// then schedule another call to itself after the specified delay
 function writeTitle() {
-  // Add the next character
+
   subtitleElement.innerHTML += subtitle[0];
-  // Remove the character from the title string
+
   subtitle = subtitle.substr(1);
-  // If there are still characters left in the title,
-  // schedule another call to this function
+
   if (subtitle.length > 0) {
     setTimeout(writeTitle, delay);
   }
 }
 
-// Start writing the title
 writeTitle();
 
 function scrollToElement(navbarButtonId, targetElementId) {
-// Get the navbar button
+
 const navbarButton = document.querySelector(`#${navbarButtonId}`);
 
-// Get the element to scroll to
 const targetElement = document.querySelector(`#${targetElementId}`);
 
-// Add an event listener to the navbar button
 navbarButton.addEventListener('click', () => {
-    // When the navbar button is clicked, scroll to the element
+
     targetElement.scrollIntoView({ behavior: 'smooth'});
 });
 }
@@ -62,8 +53,6 @@ coll2.addEventListener('click', function(){
     }
     collState = !collState;
 });
-
-/* 3D CANVAS (PROJECTS) */
 
 var canvas = document.getElementById('canvas');
 
@@ -104,7 +93,6 @@ var points = new THREE.Points(sphereGeometry, material);
 scene.add(points);
 
 function onScroll(event) {
-  // Récupérer la valeur de scroll de la page
   var scrollTop = window.scrollY;
   console.log(scrollTop);
 
