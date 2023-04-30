@@ -10,156 +10,175 @@
     <meta property="og:image:height" content="1568">
     <meta property="og:description" content="Explorez mon site !">
     <title>Ilias Bettahi</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z'/></svg>" type="image/svg+xml">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
     <script src="https://cdn.jsdelivr.net/npm/three@0.112.1/build/three.min.js"></script>
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+
 </head>
-<div class="row">
-    <img class="header-image" src="./Img/header3.png" alt="Logo" width="100%" height=auto>
-</div>
-
-
-
-<div class="row">
-    <div class="fixed topnav col-12">    
-        <a id="home-button" href="#home">Home</a>
-        <a id="about-me-button" href="#about">About me</a>
-        <a id="projects-button" href="#projects">Projects</a>
-        <a id="contact-button" href="#contact">Contact</a>
-    </div>
-</div>
-
 
 <body>
-    <div id="home-target"></div>
-    <h1>
-        Turn
-        <span class="colored-text">ideas</span><br>
-        in <span class="colored-text">solutions</span>.
-    </h1>
-
-    <p class="subtitle" id ="subtitle"></p>
-
-    <div class="row">
-        <div id="about-me-target" class="col-6">
-            <div class="button-container">
-                <a href="./CV.pdf" download="CV.pdf">👉 Resume</a>
-                <a href="mailto:ilias.bettahi@gmail.com" target="_blank">📫 Contact</a>
-            </div>
-        </div>
-    </div>
-
-    
-
-    <div class="section">
-        <h2 class="colored-text">Tell me a story !</h2>
-        <div class="section-content">
-            <p>
-                Once upon a time there was a young boy who was not very good at studies. 
-                He was always in the moon, dreaming and lost in thought. 
-                His parents and teachers were worried about him because he had a lot of difficulties in class and his academic results were poor.
-            </p>
-            <p id="collapsible-element" class="collapsible" style="color:rgb(173, 173, 173)">Read more...</p>
-            <div class="content">
-                One day, everything changed. The young boy had a click for mathematics.
-                At first, his only goal was to fill his gaps. With time, he discovered some facilities and the material stimulated him.<br>
-                <p>A spirit of competition was born in him.</p>
-                Later, he joined an engineering school. Wherever mathematical logic could help him reason, he applied it.
-                Especially in computer science where his curiosity had never finished expanding.<br>
-
-                <p>That boy is me. I have learned that, even when we feel at the bottom of the hole and our surroundings never cease to devalue us, work and self-confidence will always allow us to finally achieve ourselves.</p>
-            
-            </div>
-        </div>    
-    </div>
-
-    
-    </div class="section">
-        <h2 class="colored-text">Recent projects</h2>
-        <div id="contact-target"></div>
-        
-        <div class="section-content">  
-            <p>Click to see more on github.</p>
-        </div>
+    <nav class = "fixed topnav">
         <div class="row">
-            <div class="col-4">
-                <div class="container">
-                    <div class="button-container">
-                        <a href="https://github.com/iliasbet/ML-Genetic-Algorithms-Project">👉 Perfect Keyboard</a>
-                        <ul>
-                            <li>Machine Learning</li>
-                            <li>Genetic Algorithm</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="button-container">
-                        <a href="https://github.com/iliasbet/XXXXXXXXXXXXXXXXX">👉 Saboteur</a>
-                        <ul>
-                            <li>Board Game</li>
-                            <li>C and Allegro</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="col-12">    
+                <a id="home-button" href="#home">Home</a>
+                <a id="about-me-button" href="#about">About me</a>
+                <a id="projects-button" href="#projects">Projects</a>
+                <a id="contact-button" href="#contact">Contact</a>
             </div>
-            <div class="col-4">
-                <canvas id="canvas"></canvas>
-            </div>
-            <div class="col-4">
-                <div class="container">
-                    <div class="button-container">
-                        <a href="https://github.com/iliasbet/XXXXXXXXXXXXXXXXX">👉 Air Traffic</a>
-                        <ul>
-                            <li>Traffic Simulator</li>
-                            <li>Graph Theory</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="button-container">
-                        <a href="https://github.com/iliasbet/iliasbet.github.io">👉 Personal Website</a>
-                        <ul>
-                            <li>HTML, CSS and Javascript</li>
-                            <li>Three.js</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </div>
-    
-    
-    </div class="section">
-    <h2 class="colored-text">Don't miss a chance...</h2>
-    <div class="section-content">
-        <P>Contact me !</P>
-        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,600&display=swap" rel="stylesheet">
+    </nav>
 
-        <div class='social-links'>            
-            <div class='social-btn flex-center' id="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
-                </svg>
-                <span>in/iliasbettahi</span>
+    <main>
+
+        <section id = "home">
+            <div class="row">
+                <img class="header-image" src="./Img/header3.png" alt="Logo" width="100%" height=auto>
             </div>
+            <h1>
+                Turn <span class="colored-text">ideas</span><br>
+                in <span class="colored-text">solutions</span>.
+            </h1>
+        </section>
 
-            <div class='social-btn flex-center' id="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-                <span>iliasbet</span>
+        <section id = "about">
+            <div class="row">
+                <div class="col-6">
+                    <div class="button-container">
+                        <a href="./CV.pdf" download="CV.pdf">👉 Resume</a>
+                        <a href="mailto:ilias.bettahi@gmail.com" target="_blank">📫 Contact</a>
+                    </div>
+                </div>
+            </div>
+            <p class="subtitle" id ="subtitle"></p>
+            <h2 class="colored-text">Tell me a story !</h2>
+            <div class="section-content">
+                <p>
+                    Once upon a time there was a young boy who was not very good at studies. 
+                    He was always in the moon, dreaming and lost in thought. 
+                    His parents and teachers were worried about him because he had a lot of difficulties in class and his academic results were poor.
+                </p>
+                <p id="collapsible-element" class="collapsible" style="color:rgb(173, 173, 173)">Read more...</p>
+                <div class="content">
+                    One day, everything changed. The young boy had a click for mathematics.
+                    At first, his only goal was to fill his gaps. With time, he discovered some facilities and the material stimulated him.<br>
+                    <p>A spirit of competition was born in him.</p>
+                    Later, he joined an engineering school. Wherever mathematical logic could help him reason, he applied it.
+                    Especially in computer science where his curiosity had never finished expanding.<br>
+                    <p>That boy is me. I have learned that, even when we feel at the bottom of the hole and our surroundings never cease to devalue us, work and self-confidence will always allow us to finally achieve ourselves.</p>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="icon-container">
+                            <span class="material-icons-outlined">sports_kabaddi</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras porttitor metus laoreet luctus sagittis. Sed tincidunt, erat in tincidunt mollis, velit velit commodo odio, vitae posuere velit turpis ut mi.</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="icon-container">
+                            <span class="material-icons-outlined">computer</span>
+                            <p>Pellentesque commodo id odio sed pellentesque. Sed finibus euismod quam, ac tempor odio volutpat sit amet. Suspendisse lacinia libero a leo volutpat, vitae varius velit ullamcorper. Mauris lacinia arcu eget nulla porttitor, at aliquam neque mollis.</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="icon-container">
+                            <span class="material-icons-outlined">auto_awesome</span>
+                            <p>Curabitur suscipit enim vel lorem vestibulum, ut sagittis quam tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus accumsan vestibulum velit, et malesuada turpis pellentesque eget.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id = "projects">
+            <h2 class="colored-text">Recent projects</h2>
+            <div id="contact"></div>
             
+            <div class="section-content">  
+                <p>Click to see more on github.</p>
             </div>
-
-            <div class="social-btn flex-center" id="icon">
-                <svg style="color: white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" viewBox="0 0 30 30.000001" height="40" version="1.0"><defs><clipPath id="id1"><path d="M 3.460938 6.5625 L 26.539062 6.5625 L 26.539062 24.707031 L 3.460938 24.707031 Z M 3.460938 6.5625 " clip-rule="nonzero" fill="white"></path></clipPath></defs><g clip-path="url(#id1)"><path d="M 24.230469 11.101562 L 15 16.769531 L 5.769531 11.101562 L 5.769531 8.832031 L 15 14.503906 L 24.230469 8.832031 Z M 24.230469 6.5625 L 5.769531 6.5625 C 4.492188 6.5625 3.472656 7.578125 3.472656 8.832031 L 3.460938 22.441406 C 3.460938 23.695312 4.492188 24.707031 5.769531 24.707031 L 24.230469 24.707031 C 25.507812 24.707031 26.539062 23.695312 26.539062 22.441406 L 26.539062 8.832031 C 26.539062 7.578125 25.507812 6.5625 24.230469 6.5625 " fill-opacity="1" fill-rule="nonzero"></path></g>
-            </svg>
-                <span>ilias.bettahi@gmail.com</span>
+            <div class="row">
+                <div class="col-4">
+                    <div class="container">
+                        <div class="button-container">
+                            <a href="https://github.com/iliasbet/ML-Genetic-Algorithms-Project">👉 Perfect Keyboard</a>
+                            <ul>
+                                <li>Machine Learning</li>
+                                <li>Genetic Algorithm</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="button-container">
+                            <a href="https://github.com/iliasbet/XXXXXXXXXXXXXXXXX">👉 Saboteur</a>
+                            <ul>
+                                <li>Board Game</li>
+                                <li>C and Allegro</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <canvas id="canvas"></canvas>
+                </div>
+                <div class="col-4">
+                    <div class="container">
+                        <div class="button-container">
+                            <a href="https://github.com/iliasbet/XXXXXXXXXXXXXXXXX">👉 Air Traffic</a>
+                            <ul>
+                                <li>Traffic Simulator</li>
+                                <li>Graph Theory</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="button-container">
+                            <a href="https://github.com/iliasbet/iliasbet.github.io">👉 Personal Website</a>
+                            <ul>
+                                <li>HTML, CSS and Javascript</li>
+                                <li>Three.js</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+
+        <section id = "contact">
+            <h2 class="colored-text">Don't miss a chance...</h2>
+            <div class="section-content">
+                <p>Contact me !</p>
+                <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,600&display=swap" rel="stylesheet">
+
+                <div class='social-links'>            
+                    <div class='social-btn flex-center' id="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                        </svg>
+                        <span>in/iliasbettahi</span>
+                    </div>
+
+                    <div class='social-btn flex-center' id="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span>iliasbet</span>
+                    </div>
+
+                    <div class="social-btn flex-center" id="icon">
+                        <svg style="color: white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" viewBox="0 0 30 30.000001" height="40" version="1.0"><defs><clipPath id="id1"><path d="M 3.460938 6.5625 L 26.539062 6.5625 L 26.539062 24.707031 L 3.460938 24.707031 Z M 3.460938 6.5625 " clip-rule="nonzero" fill="white"></path></clipPath></defs><g clip-path="url(#id1)"><path d="M 24.230469 11.101562 L 15 16.769531 L 5.769531 11.101562 L 5.769531 8.832031 L 15 14.503906 L 24.230469 8.832031 Z M 24.230469 6.5625 L 5.769531 6.5625 C 4.492188 6.5625 3.472656 7.578125 3.472656 8.832031 L 3.460938 22.441406 C 3.460938 23.695312 4.492188 24.707031 5.769531 24.707031 L 24.230469 24.707031 C 25.507812 24.707031 26.539062 23.695312 26.539062 22.441406 L 26.539062 8.832031 C 26.539062 7.578125 25.507812 6.5625 24.230469 6.5625 " fill-opacity="1" fill-rule="nonzero"></path></g>
+                    </svg>
+                    <span>ilias.bettahi@gmail.com</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    
 
     <script src="script.js"></script>
 </body>

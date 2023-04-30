@@ -29,10 +29,10 @@ navbarButton.addEventListener('click', () => {
 });
 }
 
-scrollToElement('about-me-button','about-me-target');
-scrollToElement('home-button','home-target');
-scrollToElement('projects-button','contact-target');
-scrollToElement('contact-button','contact-target');
+scrollToElement('about-me-button','about');
+scrollToElement('home-button','home');
+scrollToElement('projects-button','contactt');
+scrollToElement('contact-button','contact');
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -110,8 +110,73 @@ window.addEventListener('scroll', onScroll);
 
 animate();
 
-window.onscroll = function() {
-  setTimeout(function() {
-    document.getElementById("home-target").style.display = "block";
-  }, 12000);
-}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const icons = document.querySelectorAll(".icon-container span.material-icons-outlined");
+
+  icons.forEach(icon => {
+      icon.addEventListener("mousedown", () => {
+          icon.classList.add("icon-animate");
+      });
+
+      icon.addEventListener("mouseup", () => {
+          icon.classList.remove("icon-animate");
+      });
+
+      icon.addEventListener("mouseleave", () => {
+          icon.classList.remove("icon-animate");
+      });
+  });
+});
+
+
+
+$(document).ready(function() {
+  var animationDuration = 600;
+
+  function linearEasing(t, b, c, d) {
+    return c * t / d + b;
+  }
+  
+  function sineEasing(t, b, c, d) {
+    return -c / 2 * (Math.cos(Math.PI * t / d) - 1) + b;
+  }
+  
+  function exponentialEasing(t, b, c, d) {
+    return c * Math.pow(2, 10 * (t / d - 1)) + b;
+  }
+
+  function easeInCubic(t, b, c, d) {
+  t /= d;
+  return c * t * t * t + b;
+  }
+
+  function easeOutCubic(t, b, c, d) {
+    t /= d;
+    t--;
+    return c * (t * t * t + 1) + b;
+  }
+
+
+  jQuery.extend(jQuery.easing, {
+    customEasing: function(x, t, b, c, d) {
+      return easeInCubic(t, b, c, d);
+    }
+  });
+
+  $('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if (target.length) {
+      event.preventDefault();
+      $('html, body').stop().animate(
+        {
+          scrollTop: target.offset().top
+        },
+        {
+          duration: animationDuration,
+          easing: 'customEasing'
+        }
+      );
+    }
+  });
+});
